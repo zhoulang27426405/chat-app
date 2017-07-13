@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>socket.io chat</title>
+  <link rel="stylesheet" type="text/css" href="./css/basic.css">
+  <link rel="stylesheet" type="text/css" href="./css/index.css">
+</head>
+<body>
+  <div class="chat_wrap">
+    <div class="chat_pannel">
+      <div class="chat_header">
+        <img class="avatar" src="./img/avatar_small.jpg">
+        <p class="nickname">
+        </p>
+      </div>
+      <div class="chat_item selected" _room="group">
+        <img class="avatar" src="./img/avatar_group.jpg">
+        <p class="nickname">
+          群聊
+        </p>
+      </div>
+      <div class="user_list">
+      </div>
+    </div>
+    <div class="chat_view">
+      <div class="title_wrap">在线人数（<span>0</span>）</div>
+      <div class="message_wrap">
+        <div class="messages_item group" _room="group">
+          <div class="messages_con">
+            <ul class=" message_public" >
+            </ul>
+          </div>
+          <form class="box_footer">
+            <input class="btn_send" autocomplete="off" /><button>Send</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div id="ring"></div>
+  </div>
+  <script src="/socket.io/socket.io.js"></script>
+  <script type="text/javascript" src="./js/jquery.js"></script>
+  <script type="text/javascript" src="./js/jquery.cookie.js"></script>
+  <script type="text/javascript" src="./js/client.js"></script>
+</body>
+</html>

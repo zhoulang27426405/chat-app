@@ -1,0 +1,27 @@
+.login_wrap {
+  display: block;
+  padding: 100px 0;
+  width: 1000px;
+  height: 600px;
+  margin: 0 auto;
+  background: #000;
+  text-align: center;
+}
+.login_wrap .title {
+  color: #fff;
+  font-weight: 100;
+  margin: 32px auto;
+  font-size: 32px;
+}
+.login_wrap .username {
+  background: transparent;
+  color: #fff;
+  border: none;
+  outline: 0;
+  border-bottom: 2px solid #fff;
+  padding-bottom: 15px;
+  width: 400px;
+  letter-spacing: 3px;
+  font-size: 32px;
+  text-align: center;
+}

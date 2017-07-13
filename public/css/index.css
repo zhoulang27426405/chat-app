@@ -1,0 +1,209 @@
+.chat_wrap {
+  width: 1000px;
+  height: 600px;
+  margin: 0 auto;
+}
+.chat_pannel {
+  float: left;
+  width: 280px;
+  height: 100%;
+  background: #2e3238;
+}
+.chat_pannel .chat_item {
+  position: relative;
+  font-size: 0;
+  overflow: hidden;
+  padding: 12px 18px 11px;
+  border-bottom: 1px solid #292c33;
+  cursor: pointer;
+}
+.chat_item .avatar {
+  display: inline-block;
+  margin-right: 10px;
+  width: 40px;
+  height: 40px;
+  border-radius: 2px;
+  cursor: pointer;
+}
+.chat_item .nickname {
+  display: inline-block;
+  vertical-align: top;
+  overflow: hidden;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 20px;
+  color: #fff;
+}
+.chat_item.selected {
+  background: #3a3f45
+}
+.info_tip:before {
+  content: '';
+  position: absolute;
+  left: 56px;
+  top: 7px;
+  width: 10px;
+  height: 10px;
+  background: #e54;
+  border-radius: 5px;
+}
+
+.chat_pannel .chat_header {
+  position: relative;
+  font-size: 0;
+  overflow: hidden;
+  border-bottom: 1px solid #292c33;
+  cursor: pointer;
+  padding: 18px;
+}
+.chat_header .avatar {
+  display: inline-block;
+  margin-right: 10px;
+  width: 40px;
+  height: 40px;
+  border-radius: 2px;
+  cursor: pointer;
+}
+.chat_header .nickname {
+  display: inline-block;
+  vertical-align: top;
+  overflow: hidden;
+  font-weight: 400;
+  color: #fff;
+  font-size: 18px;
+  line-height: 31px;
+}
+.chat_view {
+  position: relative;
+  background: #eee;
+  overflow: hidden;
+  height: 100%;
+}
+.title_wrap {
+  position: relative;
+  padding: 10px 0;
+  margin: 0 19px;
+  border-bottom: 1px solid #d6d6d6;
+  background: #eee;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 25px;
+  text-align: center;
+}
+.messages_item {
+  position: absolute;
+  top: 45px;
+  bottom: 100px;
+  width: 100%;
+  padding: 10px 19px;
+}
+.messages_con {
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.messages_item ul {
+}
+.messages_item li {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.messages_item .message_sys {
+  text-align: center;
+  margin:10px auto;
+}
+.message_sys .message_info {
+  display: inline-block;
+  font-size: 12px;
+  padding: 1px 18px;
+  color: #b2b2b2;
+}
+
+.messages_item li.left {
+  text-align: left;
+}
+.messages_item li.right {
+  text-align: right;
+}
+.messages_item .avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 2px;
+  cursor: pointer;
+}
+.messages_item .left .avatar {
+  float: left;
+}
+.messages_item .right .avatar {
+  float: right;
+}
+.messages_item .nickname {
+  overflow: hidden;
+  font-weight: 400;
+  padding-left: 10px;
+  font-size: 12px;
+  height: 22px;
+  line-height: 24px;
+  color: #4f4f4f;
+  width: 350px;
+}
+.messages_item p {
+  display: inline-block;
+  padding: 9px 13px;
+  margin: 0 10px;
+  border-radius: 3px;
+}
+.messages_item .left p {
+  position: relative;
+  text-align: right;
+  font-size: 14px;
+  background: #fff;
+}
+.messages_item .left p:after {
+  position: absolute;
+  content: '';
+  border: 6px solid transparent;
+  border-right: 4px solid #fff;
+  left: -10px;
+}
+.messages_item .right p {
+  position: relative;
+  text-align: left;
+  font-size: 14px;
+  background: #b2e281;
+}
+.messages_item .right p:after {
+  position: absolute;
+  content: '';
+  border: 6px solid transparent;
+  border-left: 4px solid #b2e281;
+  right: -10px;
+}
+.box_footer {
+  border-top: 1px solid #d6d6d6;
+  padding: 30px 0;
+  width: 100%;
+}
+.box_footer input {
+  border: 0;
+  border-radius: 4px;
+  line-height: 40px;
+  outline: 0;
+  font-size: 14px;
+  padding-left: 20px;
+  width: 90%;
+  margin-right: 1%;
+}
+.box_footer button {
+  display: inline-block;
+  cursor: pointer;
+  width: 9%;
+  border: 1px solid #c1c1c1;
+  line-height: 38px;
+  border-radius: 4px;
+  font-size: 14px;
+  background: #fff;
+  color: #222;
+  text-align: center;
+}
